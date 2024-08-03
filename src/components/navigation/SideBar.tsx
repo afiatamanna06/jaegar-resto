@@ -6,7 +6,7 @@ function SideBar({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative flex w-full bg-[#252836]">
       <div className="flex flex-col justify-between items-center fixed w-[5rem] md:w-[6rem] bg-[#1F1D2B] min-h-screen">
-        <div className="flex flex-col justify-start relative overflow-x-hidden gap-2 mt-8 w-full pl-2">
+        <div className="flex flex-col justify-start relative overflow-x-hidden mt-8 w-full pl-2">
           {routes.map(({ name, icon, path }, idx) => (
             <Link
               to={path}
