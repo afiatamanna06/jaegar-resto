@@ -1,13 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="text-emerald-400 text-5xl">blabla</div>
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
