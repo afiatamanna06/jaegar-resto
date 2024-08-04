@@ -7,6 +7,9 @@ module.exports = {
         primary: "#EA7C69",
         base: "#FAFAFA",
       },
+      fontFamily: {
+        'barlow': "'Barlow', sans-serif",
+      },
     },
   },
   plugins: [],
