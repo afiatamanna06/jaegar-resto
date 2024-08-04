@@ -9,7 +9,7 @@ function SideBar({ children }: { children: React.ReactNode }) {
       <div className="flex flex-col justify-between items-center fixed w-[5rem] md:w-[7rem] bg-[#1F1D2B] min-h-screen">
         <div className="flex flex-col justify-between h-screen relative overflow-x-hidden w-full pl-2">
           <div
-            className={`flex flex-row justify-center m-4 p-2 rounded-xl bg-orange-400/20`}
+            className={`flex flex-row justify-center m-4 p-2 rounded-xl bg-primary/20`}
           >
             <img src="/store.png" alt="" />
           </div>
@@ -26,8 +26,8 @@ function SideBar({ children }: { children: React.ReactNode }) {
               <div
                 className={`w-full flex flex-row justify-center p-3 md:p-4 rounded-xl ${
                   location.pathname.includes(path)
-                    ? "text-white bg-orange-500"
-                    : "text-orange-500 bg-transparent"
+                    ? "text-base bg-primary"
+                    : "text-primary bg-transparent"
                 }`}
               >
                 {icon}
@@ -40,7 +40,7 @@ function SideBar({ children }: { children: React.ReactNode }) {
               `}
           >
             <button
-              className={`w-full flex flex-row justify-center p-3 md:p-4 rounded-xl focus:text-white focus:bg-orange-500 text-orange-500 bg-transparent
+              className={`w-full flex flex-row justify-center p-3 md:p-4 rounded-xl focus:text-base focus:bg-primary text-primary bg-transparent
                 `}
             >
               <IoLogOutOutline size={30} />
@@ -48,7 +48,7 @@ function SideBar({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </div>
-      <div className="min-h-screen overflow-y-auto w-[calc(100vw-5rem)] ml-[5rem] md:w-[calc(100vw-7rem)] md:ml-[7rem] text-white">
+      <div className="min-h-screen overflow-y-auto w-[calc(100vw-5rem)] ml-[5rem] md:w-[calc(100vw-7rem)] md:ml-[7rem] text-base">
         {children}
       </div>
     </div>
