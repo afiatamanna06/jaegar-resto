@@ -11,8 +11,8 @@ import { GoHome } from "react-icons/go";
 import { LuBadgePercent, LuSettings } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
 import { FiBell } from "react-icons/fi";
-import Orders from "../pages/OrdersPage";
 import SettingsPage from "../pages/SettingsPage";
+import DashboardPage from "../pages/DashboardPage";
 
 type RouteType = {
   name: string;
@@ -29,27 +29,27 @@ export const routes: RouteType[] = [
     icon: <GoHome size={30} />,
   },
   {
-    name: "Staff",
-    path: "/staff",
-    element: <Orders />,
+    name: "Offers",
+    path: "/offers",
+    element: <></>,
     icon: <LuBadgePercent size={30} />,
   },
   {
-    name: "Analytics",
-    path: "/analytics",
-    element: <Orders />,
+    name: "Dashboard",
+    path: "/dashboard",
+    element: <DashboardPage />,
     icon: <HiOutlineChartPie size={30} />,
   },
   {
-    name: "Records",
-    path: "/records",
-    element: <Orders />,
+    name: "Messages",
+    path: "/messages",
+    element: <></>,
     icon: <IoMailOutline size={30} />,
   },
   {
-    name: "Records",
-    path: "/records",
-    element: <Orders />,
+    name: "Notifications",
+    path: "/notifications",
+    element: <></>,
     icon: <FiBell size={30} />,
   },
   {
