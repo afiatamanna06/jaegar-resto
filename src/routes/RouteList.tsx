@@ -5,7 +5,12 @@ import {
   HiOutlineUserGroup,
   HiOutlineChartPie,
   HiOutlineDocumentText,
+  HiOutlineHome,
 } from "react-icons/hi";
+import { GoHome } from "react-icons/go";
+import { LuBadgePercent, LuSettings } from "react-icons/lu";
+import { IoMailOutline } from "react-icons/io5";
+import { FiBell } from "react-icons/fi";
 import Orders from "../pages/OrdersPage";
 
 type RouteType = {
@@ -17,16 +22,16 @@ type RouteType = {
 
 export const routes: RouteType[] = [
   {
-    name: "Orders",
+    name: "Home",
     path: "/",
     element: <Orders />,
-    icon: <HiOutlineReceiptTax size={30} />,
+    icon: <GoHome size={30} />,
   },
   {
     name: "Staff",
     path: "/staff",
     element: <Orders />,
-    icon: <HiOutlineUserGroup size={30} />,
+    icon: <LuBadgePercent size={30} />,
   },
   {
     name: "Analytics",
@@ -38,6 +43,18 @@ export const routes: RouteType[] = [
     name: "Records",
     path: "/records",
     element: <Orders />,
-    icon: <HiOutlineDocumentText size={30} />,
+    icon: <IoMailOutline size={30} />,
+  },
+  {
+    name: "Records",
+    path: "/records",
+    element: <Orders />,
+    icon: <FiBell size={30} />,
+  },
+  {
+    name: "Records",
+    path: "/records",
+    element: <Orders />,
+    icon: <LuSettings size={30} />,
   },
 ];
