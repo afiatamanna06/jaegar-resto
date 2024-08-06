@@ -40,7 +40,7 @@ const OrderTable = () => {
                 <tr key={item.customer} className="">
                   <td className="whitespace-nowrap flex flex-row items-center py-2 pl-4 pr-3 text-light-text sm:pl-0">
                     <div
-                      className={`flex flex-row justify-center m-4 p-1 md:w-[2.8rem] md:h-[2.8rem] rounded-full bg-orange`}
+                      className={`flex flex-row justify-center m-4 p-1 w-[2.8rem] h-[2.8rem] rounded-full bg-orange`}
                     >
                       <img src="/order.png" alt="" className="object-cover" />
                     </div>

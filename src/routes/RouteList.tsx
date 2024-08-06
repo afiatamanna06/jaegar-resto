@@ -1,18 +1,12 @@
 import { ReactNode } from "react";
-import {
-  HiOutlineCollection,
-  HiOutlineReceiptTax,
-  HiOutlineUserGroup,
-  HiOutlineChartPie,
-  HiOutlineDocumentText,
-  HiOutlineHome,
-} from "react-icons/hi";
+import { HiOutlineChartPie } from "react-icons/hi";
 import { GoHome } from "react-icons/go";
 import { LuBadgePercent, LuSettings } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
 import { FiBell } from "react-icons/fi";
 import SettingsPage from "../pages/SettingsPage";
 import DashboardPage from "../pages/DashboardPage";
+import HomePage from "../pages/HomePage";
 
 type RouteType = {
   name: string;
@@ -25,7 +19,7 @@ export const routes: RouteType[] = [
   {
     name: "Home",
     path: "/",
-    element: <></>,
+    element: <HomePage />,
     icon: <GoHome size={30} />,
   },
   {
