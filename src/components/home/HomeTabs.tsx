@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HotDishesTab from './HotDishesTab';
 
 const HomeTabs = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -56,9 +57,7 @@ const HomeTabs = () => {
         </button>
       </div>
       <div className="p-4">
-        {activeTab === 1 && <div>Content for Tab 1</div>}
-        {activeTab === 2 && <div>Content for Tab 2</div>}
-        {activeTab === 3 && <div>Content for Tab 3</div>}
+        {activeTab === 1 && <HotDishesTab />}
       </div>
     </div>
   );
