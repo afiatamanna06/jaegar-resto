@@ -2,7 +2,7 @@ import { orders } from "./OrderData";
 
 const OrderTable = () => {
   return (
-    <div className="bg-darkbg no-scrollbar overflow-y-auto w-full rounded-lg p-5">
+    <div className="bg-darkbg no-scrollbar lg:h-[35rem] overflow-y-auto w-full rounded-lg p-5">
       <div className="text-xl font-semibold">Order Report</div>
       <div className="w-full overflow-x-auto no-scrollbar">
         <div className="inline-block min-w-full align-middle">

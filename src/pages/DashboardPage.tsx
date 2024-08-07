@@ -2,6 +2,7 @@ import React from "react";
 import OrderTable from "../components/dashboard/OrderTable";
 import { formatDate } from "../utils/formatDate";
 import OrderStat from "../components/dashboard/OrderStat";
+import MostOrderedSection from "../components/dashboard/MostOrderedSection";
 
 const DashboardPage = () => {
   const date = new Date();
@@ -17,7 +18,9 @@ const DashboardPage = () => {
           <OrderStat />
           <OrderTable />
         </div>
-        <div className="flex flex-col gap-8 lg:w-[35%] xl:w-[30%]"></div>
+        <div className="flex flex-col gap-8 lg:w-[35%] xl:w-[30%]">
+          <MostOrderedSection />
+        </div>
       </div>
     </div>
   );
